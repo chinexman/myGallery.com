@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">6
+    <title>WeepaNew</title>
+
+    <meta name="viewpoint"  content="width=device-width" initial-scale="1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="../myGallery.com/MDB%20Free/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link  href="css/animate.css" rel="stylesheet">
+
+
+
+
+
+
+    <style>
+
+
+
+
+
+        .navbar{
+
+            margin-bottom:0;
+            background-color: #000000;
+            z-index: 9999;
+            border: 0;
+            font-size: 9px !important;
+            text-transform:uppercase;
+
+            font-weight:400;
+            line-height: 1.42857143 !important;
+            letter-spacing: 2px;
+            border-radius: 3px;
+            font-family: Montserrat, sans-serif;
+            height:60px;
+
+
+
+        }
+        .navbar li a,.navbar-nav li{
+
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+        .navbar li a,.navbar .navbar-brand{
+            color:#fff !important;
+        }
+
+        .navbar-nav li a:hover, .navbar-nav li.active a{
+            background-color: #fff!important;
+            color: #000000 !important;
+
+        }
+
+        .navbar .navbar-brand{
+            padding-top:7px;
+            padding-left:70px;
+        }
+
+
+
+
+
+
+        .container-fluid .carousel{
+            margin-left: -16px;
+            margin-right: -45px;
+        }
+
+        .carousel-caption{
+            position:absolute;
+            z-index: 1;
+            display:table;
+
+        }
+
+        .item h1{
+            font-size:70px;
+
+        }
+
+
+        .item p{
+            font-size:35px;
+
+        }
+
+        .item .btn-primary{
+            height:50px;
+            width: 25%;
+            font-size:18px;
+
+        }
+
+        .item .btn-default {
+            color:black !important;
+            height: 50px;
+            width: 25%;
+            font-size: 18px;
+            background:white;
+
+        }
+        .container#product  .btn-primary {
+            background-color: white;
+            color: red !important;
+            width: 70%;
+            margin-top: -15px;
+            border:solid 1px black;
+            font-size: 15px;
+        }
+
+        hrr {
+            width:90%;
+            margin: 0 auto;
+            height:5px;
+            background:lightgrey;
+        }
+
+
+        .container#offer .col-sm-4{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .container#lorem .col-md-5{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .container-fluid#gotonext{
+            background-image:url("../myGallery.com/sibi/19.png");
+
+            color:white;
+            padding-top:30px;
+            padding-bottom: 30px;
+            background-color: #1a572f;
+        }
+
+        .container#offer  .btn-primary{
+            width:100%;
+            color: red !important;
+            background: white;
+            border: 1px solid black;
+            margin-top: -3px;
+        }
+
+        .container#offer .pull-right{
+            color: red !important;
+        }
+
+        .container#offer .pull-left{
+            color: black !important;
+        }
+
+
+        .footer-one h5{
+            color:white !important;
+            font-size:16px;
+
+        }
+
+        .footer-one a{
+            color:white !important;
+            font-size:12px;
+            letter-spacing: 2px;
+
+
+
+        }
+
+        .footer-one li{
+            color:white !important;
+            font-size:12px;
+
+
+        }
+
+
+        .footer-one {
+            background-color: #1b2433;
+            height:400px;
+            padding-top: 30px;
+
+
+        }
+        .footer-one p{
+            color: white !important;
+            letter-spacing: 2px;
+
+        }
+
+
+        .footer-one-alt {
+            background-color: #131a26;
+            height:100px;
+            padding-top: 20px;
+
+
+        }
+
+        .fa{
+            padding:10px;
+            font-size:20px;
+
+            text-decoration :none;
+            color:white;
+            text-align:center;
+
+
+            border-radius: 50px;
+
+        }
+
+        .fa:hover{
+            text-decoration: none;
+        }
+
+        .fa-facebook{
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter{
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google{
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin{
+            background: #007bb5;
+            color: white;
+        }
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage">
+                <img src="/myGallery.com/IMG/W_from_Weepa_v7_8.png"  style="border-radius:5px" alt="logo" width="45" height="45">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#Home">Home</a> </li>
+                <li><a href="#KTV BOOKINGS">  Ktv bookings</a></li>
+                <li><a href="#PEOPLE">people</a></li>
+                <li><a href="#PAGES">pages</a></li>
+                <li><a href="SIGN UP"><span class="glyphicon glyphicon-user"></span> sign up</a></li>
+                <li><a href="LOG IN"><span class="glyphicon glyphicon-log-in"></span> login</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+<div class="container-fluid">
+
+    <div class="carousel slide" data-ride="carousel" id="myCarousel">
+
+
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide="1"></li>
+            <li data-target="#myCarousel" data-slide="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="active item">
+                <img src="/myGallery.com/IMG/daytimenight_1.jpg">
+
+                <div class="carousel-caption">
+
+                    <h1 class="animated bounce infinite">Welcome to Weepa</h1>
+                    <p class="animated slideInRight">search form will go here</p>
+                    <button type="button" class="btn btn-default btn-lg animated slideInUp">Contact</button>
+                    <button type="button" class="btn btn-primary btn-lg animated slideInDown">Search</button>
+                </div>
+
+
+            </div>
+            <div class="item">
+                <img src="/myGallery.com/IMG/daytimenight1.jpg">
+                <div class="carousel-caption">
+                    <h1 class="animated flipInX">Welcome to Weepa</h1>
+                    <p class="animated rotateInDownLeft">search form will go here</p>
+                    <button type="button" class="btn btn-default btn-lg  animated zoomInDown">Contact</button>
+                    <button type="button" class="btn btn-primary btn-lg animated bounceInLeft">Search</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/myGallery.com/IMG/daytimenight4_1.jpg">
+                <div class="carousel-caption">
+                    <h1 class="animated flipInY">Welcome to Weepa</h1>
+                    <p class="animated lightSpeedIn ">search form will go here</p>
+                    <button type="button" class="btn btn-default  btn-lg animated rollIn">Contact</button>
+                    <button type="button" class="btn btn-primary btn-lg animated zoomInDown">Search</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--   left and right control -->
+        <a class="left carousel-control"  href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">next</span>
+        </a>
+
+    </div>
+</div>
+
+<br>
+
+<br>
+
+<br>
+<!-- product section -->
+
+<div id="product" class="container">
+    <div class="row">
+        <div class="col-sm-3 text-center wow animated fadeInLeft">
+            <img src="/myGallery.com/sibi/11.png" class="img-responsive">
+            <span class="btn btn-primary">ACTIVITIES</span>
+        </div>
+
+        <div class="col-sm-3 text-center wow animated fadeInLeft">
+            <img src="/myGallery.com/sibi/e.png" class="img-responsive">
+            <span class="btn btn-primary">LIFE STYLE</span>
+        </div>
+
+        <div class="col-sm-3 text-center wow animated fadeInRight">
+            <img src="/myGallery.com/sibi/pic.png" class="img-responsive">
+            <button type="button" class="btn btn-primary">KTV BOOKINGS</button>
+        </div>
+
+        <div class="col-sm-3 text-center wow animated fadeInRight">
+            <img src="/myGallery.com/sibi/1111.png" class="img-responsive">
+            <span class="btn btn-primary">PEOPLES</span>
+        </div>
+
+
+    </div>
+
+</div>
+
+<br>
+
+
+<br>
+
+<hr>
+<hr>
+
+
+<!-- offer section -->
+<div  id="offer" class="container">
+    <h2 class="text-center">Offers of Day</h2>
+    <div class="row">
+        <div class="col-sm-4 wow animated fadeInLeft">
+
+            <img src="/myGallery.com/sibi/2.png" class="img-responsive"  >
+        </div>
+
+        <div class="col-sm-4 wow animated fadeInLeft">
+            <img src="/myGallery.com/sibi/33.png" class="img-responsive">
+
+            <button type="button" class="btn btn-primary" ><span class="pull-left">KTV BOOKINGS</span><span class="pull-right">$40*</span></button>
+        </div>
+
+        <div class="col-sm-4 wow animated fadeInRight">
+            <img src="/myGallery.com/WeepaNew/sibi/tree.png" class="img-responsive">
+
+            <button type="button" class="btn btn-primary"><span class="pull-left">KTV BOOKINGS</span><span class="pull-right">$40*</span></button>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-4 wow animated fadeInLeft">
+            <img src="/myGallery.com/sibi/buss.png" class="img-responsive">
+
+            <button type="button" class="btn btn-primary"><span class="pull-left" >KTV BOOKINGS</span><span class="pull-right">$40*</span></button>
+
+        </div>
+        <div class="col-sm-4 wow animated fadeInLeft">
+            <img src="/myGallery.com/sibi/sparrow.png" class="img-responsive">
+
+            <button type="button" class="btn btn-primary"><span class="pull-left">KTV BOOKINGS</span><span class="pull-right">$40*</span> </button>
+
+        </div>
+        <div class="col-sm-4 wow animated fadeInRight" >
+            <img src="/myGallery.com/sibi/88.png" class="img-responsive">
+
+            <button type="button" class="btn btn-primary"><span class="pull-left">KTV BOOKINGS</span><span class="pull-right">$40*</span> </button>
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 wow animated fadeInLeft">
+            <img src="/myGallery.com/sibi/church.png" class="img-responsive">
+
+            <button type="button" class="btn btn-primary"><span class="pull-left">KTV BOOKINGS</span><span class="pull-right">$40*</span> </button>
+
+        </div>
+        <div class="col-sm-4 wow animated fadeInRight">
+            <img src="/myGallery.com/sibi/janese.png" class="img-responsive">
+
+            <button type="button" class="btn btn-primary"><span class="pull-left">KTV BOOKINGS</span><span class="pull-right">$40*</span> </button>
+        </div>
+        <div class="col-sm-4 wow animated fadeInRight">
+            <img src="/myGallery.com/sibi/desi.png" class="img-responsive">
+
+            <button type="button" class="btn btn-primary"><span class="pull-left">KTV BOOKINGS</span><span class="pull-right">$40*</span> </button>
+
+        </div>
+    </div>
+</div>
+
+<div  id ="lorem" class="container">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1 wow animated fadeInLeft " >
+            <img src="/myGallery.com/sibi/17.png" class="img-responsive">
+
+        </div>
+        <div class="col-md-5 wow animated fadeInRight">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit . Ab ad amet atque autem consectetur
+                doloremque eius, eligen di ex ipsum labore nam nostrum perferendis quae ratione
+                recusandae sunt vitae voluptas voluptates! recusandae sunt vitae voluptas voluptates!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit . Ab ad amet atque autem consectetur
+                doloremque eius, eligen di ex ipsum labore nam nostrum perferendis quae ratione recusandae sunt
+                vitae voluptas voluptates! recusandae sunt vitae voluptas voluptates!
+                recusandae sunt vitae voluptas voluptates! recusandae sunt vitae voluptas voluptates! </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<br>
+<br>
+
+<div  id="gotonext" class="container-fluid">
+    <div class="row" >
+        <br>
+        <br>
+
+        <div class="col-md-8 col-md-offset-1 wow animated fadeInRight">
+            <h2> Enjoy Every days</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos ducimus,
+                eaque earum enim error ex, ipsa ipsum, itaque labore laudantium libero optio provident
+                quas quasi sed tenetur velit voluptate.</p>
+
+            <button type="button" class="btn btn-primary">GO TO NEXT SLIDE</button>
+
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 wow animated fadeInLeft">
+                <img src="" alt="logo">
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                    piece of classical Latin literature from 45 BC,making it over 2000 years old.</p>
+            </div>
+            <div class="col-sm-2 wow animated fadeInLeft">
+                <h5>Weepa</h5><br>
+                <ul class="list-unstyled">
+                    <li><a href="#">ABOUT US</a></li><br>
+                    <li><a href="#">MEDIA $ PRESS</a></li><br>
+                    <li><a href="#">CARREER</a></li><br>
+                    <li><a href="#">BLOG</a></li><br>
+                </ul>
+            </div>
+
+            <div class="col-sm-2 wow animated fadeInLeft ">
+                <h5>People</h5><br>
+                <ul class="list-unstyled">
+                    <li><a href="#">HELP & SUPPORT</a></li><br>
+                    <li><a href="#">PRIVACY POLICY</a></li><br>
+                    <li><a href="#">TERMS & CONDITIONS</a></li><br>
+                </ul>
+            </div>
+
+            <div class="col-sm-2 wow animated fadeInRight">
+                <h5>Ktv Bookings</h5><br>
+                <ul class="list-unstyled">
+                    <ADDRESS><li><strong>Address:</strong> 795 Folsom Ave, Suite 600 CA 94107</li><br>
+                        <li><strong><span class="glyphicon glyphicon-phone"></span>Phone:</strong> (123) 456-7890, 123-4567 89<br></li><br>
+                        <li><a href="mailto:first.last@example.com" > <strong> <span class="glyphicon glyphicon-envelope"></span> Email:</strong> first.last@example.com</a></li><br>
+                        <li><strong> Monday - Friday: </strong> 10:00 - 20:00</li><br>
+                        <li><strong>Saturday, Sunday:</strong> Closed</li><br>
+                    </ADDRESS>
+                </ul>
+            </div>
+
+            <div class="col-sm-2 wow animated fadeInRight">
+                <h5>People</h5><br>
+                <ul class="list-unstyled">
+                    <li><a href="#about us">ABOUT US</a></li><br>
+                    <li><a href="#about us">MEDIA $ PRESS</a></li><br>
+                    <li><a href="#about us">CARREER</a></li><br>
+                    <li><a href="#about us">BLOG</a></li><br>
+                </ul>
+            </div>
+
+            <div class="col-sm-2 wow animated fadeInRight">
+                <h5>Social Media</h5><br>
+                <ul class="list-unstyled">
+                    <li><a href="#about us">ABOUT US</a></li><br>
+                    <li><a href="#about us">MEDIA $ PRESS</a></li><br>
+                    <li><a href="#about us">CARREER</a></li><br>
+                    <li>  <a href="#about us">BLOG</a></li><br>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="footer-one-alt">
+        <div class="container">
+            <div class="col-sm-5">
+                <p class="footer-copyright"> @weepa 2017</p>
+            </div>
+            <div class="col-sm-7 ">
+                <ul class="list-inline footer-social-one m-b-0 pull-right">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </ul>
+                <a href="#myPage" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span> </a>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<!-- /Start your project here-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>
+
+

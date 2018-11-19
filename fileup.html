@@ -1,0 +1,48 @@
+
+<?php
+$imagesDirectory = "images/";
+
+if (is_dir($imagesDirectory))
+{
+	$opendirectory = opendir($imagesDirectory);
+
+    while (($image = readdir($opendirectory)) !== false)
+	{
+		if(($image == '.') || ($image == '..'))
+		{
+			continue;
+		}
+
+		$imgFileType = pathinfo($image,PATHINFO_EXTENSION);
+
+		if(($imgFileType == 'jpg') || ($imgFileType == 'png'))
+		{
+			echo "<img src='images/".$image."' width='200'> ";
+}
+}
+
+closedir($opendirectory);
+
+}
+?>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>file upload</title>
+
+</head>
+<body>
+<form action="fileupload.php" method="post" enctype="multipart/form-data">
+
+
+    <input type="file" name="fileToUpload" id="fileToUploaad"><br>
+    <input type="submit" name="submit" value="Upload image">
+
+    <!-- echo sprintf('<img src="data:image/png;base64,%s" />', base64_encode($path)); -->
+   </form>
+
+
+   </body>
+   </html>
